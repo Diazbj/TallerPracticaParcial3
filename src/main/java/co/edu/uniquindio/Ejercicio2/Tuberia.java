@@ -1,4 +1,4 @@
-package co.edu.uniquindio;
+package co.edu.uniquindio.Ejercicio2;
 
 public class Tuberia {
 
@@ -34,7 +34,14 @@ public class Tuberia {
         return( buffer[siguiente] );
     }
 
-
+    public synchronized boolean contieneLetra(char letra){
+        for(char c:buffer){
+            if (c==letra) {
+                return true;
+            }
+        }
+        return false;
+    }
 
     // M�todo para a�adir letras al buffer
     public synchronized void lanzar( char c )
@@ -58,4 +65,6 @@ public class Tuberia {
         estaVacia = false;
         notify();
     }
+
+
 }

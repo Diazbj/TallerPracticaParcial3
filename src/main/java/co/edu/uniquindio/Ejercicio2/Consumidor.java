@@ -1,4 +1,4 @@
-package co.edu.uniquindio;
+package co.edu.uniquindio.Ejercicio2;
 
 public class Consumidor extends Thread {
     private Tuberia tuberia;
@@ -10,18 +10,20 @@ public class Consumidor extends Thread {
     }
 
     public void run() {
-        char c;
+        char c1;
+        char c2;
 
         // Consume 10 letras de la tuber�a
         for( int i=0; i < 10; i++ )
         {
-            c = tuberia.recoger();
+            c1 = tuberia.recoger();
+            c2 = tuberia.recoger();
             // Imprime las letras retiradas
-            System.out.println( "Recogido el caracter "+c );
+            System.out.println( "Recogido el caracter "+c1+" y el caracter " +c2);
             // Espera un poco antes de coger m�s letras
             try
             {
-                sleep( (int)(Math.random() * 2000 ) );
+                sleep( (int)(Math.random() * 3000 ) );
             }
             catch( InterruptedException e )
             {
