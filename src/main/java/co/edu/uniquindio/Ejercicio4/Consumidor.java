@@ -1,4 +1,9 @@
-package co.edu.uniquindio.Ejercicio3;
+package co.edu.uniquindio.Ejercicio4;
+
+
+
+import co.edu.uniquindio.Ejercicio4.Utils.ArchivoLogger;
+import co.edu.uniquindio.Ejercicio4.Utils.Persistencia;
 
 import java.util.Arrays;
 import java.util.List;
@@ -25,21 +30,40 @@ public class Consumidor extends Thread {
         while (!palabraCompleta() && !detenerProduccion) {
             char[] letras = buffer.recoger();
             System.out.println("Consumidor recogio: " + Arrays.toString(letras));
+
+
             for (char letra : letras) {
                 if (palabraFormada.length() < palabraObjetivo.length()) {
                     if (esParteDeLaPalabra(letra)) {
-                        palabraFormada += letra;
-
+                        int indice = palabraFormada.length();
+                        palabraFormada=palabraFormada.substring(0,indice)+letra+palabraFormada.substring(indice);
                     } else {
-                        letrasNoUsadas.add(letra);
+                        if (letra == ' '||letra=='\0' ){
+
+                        }else{
+                            letrasNoUsadas.add(letra);
+                        }
+
                     }
                 }
             }
             System.out.println("Palabra formada hasta ahora: " + palabraFormada);
+            if (palabraCompleta()) {
+                // Acción cuando se completa la palabra
+                String mensaje = "Palabra formada completada: " + palabraFormada;
+                ArchivoLogger.guardarRegistroLog(mensaje, 1, "PalabraCompletada", "src/main/java/resources/Log/PalabraFormadaLog.txt");
+            }
+            try {
+                Thread.sleep(200);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
 
         System.out.println("Palabra formada final: " + palabraFormada);
         System.out.println("Letras no utilizadas final: " + letrasNoUsadas);
+        Persistencia.guardarLetrasSobrantes(letrasNoUsadas);
+
     }
 
     private boolean palabraCompleta() {

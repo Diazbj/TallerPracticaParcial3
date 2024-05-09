@@ -1,0 +1,4 @@
+may 09, 2024 2:06:47 A. M. co.edu.uniquindio.Ejercicio4.Utils.ArchivoLogger guardarRegistroLog
+INFO: [INFO] 2024-05-09 - PalabraCompletada - Palabra formada completada: pr
+may 09, 2024 2:09:36 A. M. co.edu.uniquindio.Ejercicio4.Utils.ArchivoLogger guardarRegistroLog
+INFO: [INFO] 2024-05-09 - PalabraCompletada - Palabra formada completada: progr@macion_3#2023%

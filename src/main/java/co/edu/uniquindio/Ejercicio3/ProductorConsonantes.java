@@ -7,7 +7,7 @@ import java.util.Queue;
 public class ProductorConsonantes extends Thread {
     private Buffer buffer;
     private Queue<Character> caracteresObjetivo;
-    private char[] consonantes = {'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', '�', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z'};
+    private char[] consonantes = {'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'ñ', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z'};
 
     private boolean detenerProduccion = false;
     public ProductorConsonantes(Buffer buffer, Queue<Character> caracteresObjetivo) {
