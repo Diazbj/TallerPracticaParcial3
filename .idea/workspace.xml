@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39c2f515-e867-474f-a7df-c46a796e14dd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Ejercicio1/BufferArchivo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Ejercicio1/Consumidor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Ejercicio1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Ejercicio1/ProductorAzul.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Ejercicio1/ProductorCasa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Ejercicio3/Buffer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Ejercicio3/Consumidor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Ejercicio3/Ejecucion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Ejercicio3/ProductorConsonantes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Ejercicio3/ProductorNumeros.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Ejercicio3/ProductorVocales.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/resources/archivo1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/resources/archivo2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +48,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Ejecucion.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.co.edu.uniquindio.Ejercicio3.Ejecucion.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Documentos/Programacion 3/TallerProductorConsumidor2/TallerProductorConsumidor",
+    "last_opened_file_path": "D:/Documentos/Programacion 3/TalleresParcial3/TallerPracticaParcial3/src/main/java/co/edu/uniquindio/Ejercicio3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -49,6 +65,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Documentos\Programacion 3\TalleresParcial3\TallerPracticaParcial3\src\main\java\co\edu\uniquindio\Ejercicio3" />
+      <recent name="D:\Documentos\Programacion 3\TalleresParcial3\TallerPracticaParcial3\src\main\java\resources" />
+      <recent name="D:\Documentos\Programacion 3\TalleresParcial3\TallerPracticaParcial3\src\main\java\co\edu\uniquindio\Ejercicio1" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.co.edu.uniquindio.Ejercicio3.Ejecucion">
     <configuration name="Ejecucion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="co.edu.uniquindio.Ejercicio2.Ejecucion" />
@@ -113,7 +136,7 @@
       <option name="presentableId" value="Default" />
       <updated>1714944796590</updated>
       <workItem from="1714944797878" duration="4385000" />
-      <workItem from="1715110181963" duration="330000" />
+      <workItem from="1715110181963" duration="489000" />
     </task>
     <servers />
   </component>
