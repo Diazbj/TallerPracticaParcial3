@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b16af83f-d006-48e5-9b56-f83b9bf66302" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Ejercicio4/Buffer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Ejercicio4/Consumidor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Ejercicio4/Ejecucion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Ejercicio4/P1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Ejercicio4/P2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Ejercicio4/P3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Ejercicio4/P4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Ejercicio4/Utils/ArchivoLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Ejercicio4/Utils/Persistencia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/resources/Log/PalabraFormadaLog.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/resources/Respaldo/LetrasSobrantes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Ejercicio3/Consumidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Ejercicio3/Consumidor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Ejercicio3/ProductorConsonantes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/Ejercicio3/ProductorConsonantes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/Log/PalabraFormadaLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/Log/PalabraFormadaLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/Respaldo/LetrasSobrantes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/Respaldo/LetrasSobrantes.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +19,7 @@
     "Application.Ejecucion.executor": "Run",
     "Maven.co.edu.uniquindio [clean].executor": "Run",
     "Maven.co.edu.uniquindio [compile].executor": "Run",
-    "git-widget-placeholder": "Merging master",
+    "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",

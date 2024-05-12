@@ -20,3 +20,5 @@ may 12, 2024 5:00:22 A. M. co.edu.uniquindio.Ejercicio4.Utils.ArchivoLogger gu
 INFO: [INFO] 2024-05-12 - PalabraCompletada - Palabra formada completada: prog
 may 12, 2024 5:03:17 A. M. co.edu.uniquindio.Ejercicio4.Utils.ArchivoLogger guardarRegistroLog
 INFO: [INFO] 2024-05-12 - PalabraCompletada - Palabra formada completada: progr@macion_3#2023%
+may 12, 2024 5:08:37 A. M. co.edu.uniquindio.Ejercicio4.Utils.ArchivoLogger guardarRegistroLog
+INFO: [INFO] 2024-05-12 - PalabraCompletada - Palabra formada completada: progr@macion_3#2023%
