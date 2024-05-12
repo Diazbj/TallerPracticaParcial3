@@ -27,7 +27,7 @@ public class Buffer {
     }
 
     public synchronized char[] recoger() {
-        while (estaVacio) {
+        while (siguiente < 3) { // Esperar hasta que haya al menos 3 elementos en el buffer
             try {
                 wait();
             } catch (InterruptedException e) {
@@ -35,23 +35,19 @@ public class Buffer {
             }
         }
 
-        char[] letras = new char[3]; // Cambiar el tamaño a 3
-        if (siguiente >= 3) { // Verificar si hay al menos 3 caracteres en el buffer
-            letras[0] = buffer[siguiente - 3]; // Recoger el tercer carácter desde el final
-            letras[1] = buffer[siguiente - 2]; // Recoger el segundo carácter desde el final
-            letras[2] = buffer[siguiente - 1]; // Recoger el último carácter
-            siguiente -= 3; // Ajustar el índice siguiente
-        } else if (siguiente == 2) {
-            letras[0] = buffer[siguiente - 2];
-            letras[1] = buffer[siguiente - 1];
-            siguiente -= 2;
-        } else if (siguiente == 1) {
-            letras[0] = buffer[siguiente - 1];
-            siguiente -= 1;
+        int cantidadCaracteres = Math.min(3, siguiente); // Determinar cuántos caracteres recoger
+        char[] letras = new char[cantidadCaracteres];
+
+        for (int i = 0; i < cantidadCaracteres; i++) {
+            letras[i] = buffer[siguiente - cantidadCaracteres + i];
         }
+
+        siguiente -= cantidadCaracteres;
 
         if (siguiente == 0) {
             estaVacio = true;
+            // Notificar al productor que el buffer está vacío
+            notifyAll();
         }
         estaLleno = false;
         notifyAll();

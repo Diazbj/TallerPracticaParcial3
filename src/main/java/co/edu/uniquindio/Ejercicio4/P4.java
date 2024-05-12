@@ -1,6 +1,7 @@
 package co.edu.uniquindio.Ejercicio4;
 
 import java.util.Queue;
+import java.util.Random;
 
 public class P4 extends Thread {
     private Buffer buffer;
@@ -16,8 +17,9 @@ public class P4 extends Thread {
     @Override
     public void run() {
         int index = 0;
+        Random rand = new Random();
         while (true) {
-            char caracter = caracteres[index % caracteres.length];
+            char caracter = caracteres[rand.nextInt(caracteres.length)];
             if (esVocal(caracter)) {
                 buffer.lanzar(caracter);
                 System.out.println("Productor de vocales ha lanzado: " + caracter);

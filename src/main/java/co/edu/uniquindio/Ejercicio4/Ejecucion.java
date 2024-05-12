@@ -13,12 +13,14 @@ public class Ejecucion extends Thread {
 
     public static void main(String[] args) {
         // Definir el array de caracteres
-        char[] caracteres = {'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'ñ', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z','B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'Ñ', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'e', 'i', 'o', 'u', '@','#','-', '*', '$','(',')','/', '%', '+', ':',';','_'};
+//        char[] caracteres = {'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'ñ', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z','B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'Ñ', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'e', 'i', 'o', 'u', '@','#','-', '*', '$','(',')','/', '%', '+', ':',';','_'};
+        char[] caracteres = {'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'ñ', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'e', 'i', 'o', 'u', '@','#','/', '%', '+',':',';','_'};
 
         // Crear el buffer y la cola de caracteres objetivo
         Buffer buffer = new Buffer();
         Queue<Character> caracteresObjetivo = new LinkedList<>();
         String palabraObjetivo = "progr@macion_3#2023%";
+//        String palabraObjetivo = "prog";
         for (char c : palabraObjetivo.toCharArray()) {
             caracteresObjetivo.add(c);
         }

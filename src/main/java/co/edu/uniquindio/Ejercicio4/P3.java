@@ -1,6 +1,7 @@
 package co.edu.uniquindio.Ejercicio4;
 
 import java.util.Queue;
+import java.util.Random;
 
 public class P3 extends Thread {
     private Buffer buffer;
@@ -15,9 +16,10 @@ public class P3 extends Thread {
 
     @Override
     public void run() {
+        Random rand = new Random();
         int index = 0;
         while (true) {
-            char caracter = caracteres[index % caracteres.length];
+            char caracter = caracteres[rand.nextInt(caracteres.length)];
             if (esConsonante(caracter)) {
                 buffer.lanzar(caracter);
                 System.out.println("Productor de consonantes ha lanzado: " + caracter);
